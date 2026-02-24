@@ -1,5 +1,5 @@
 
-export function gettingStarted1(){
+function gettingStarted1(){
     // sky blue background
     background(135,206,235);
     // sun in top-right corner
