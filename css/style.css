@@ -4,17 +4,10 @@
   box-sizing: border-box;
 }
 
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #f0f0f0;
-} */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #f4f4f4;
+  background: #5ea1c0;
   margin: 0;
   padding: 0;
 }
@@ -28,6 +21,9 @@ header {
 h1,
 h2 {
   margin: 10px 0;
+  color: rgb(131, 219, 16);
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 section {
@@ -44,6 +40,8 @@ button {
   background: #2196f3;
   color: white;
   transition: background 0.3s;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 button:hover {
@@ -61,4 +59,14 @@ button:hover {
   justify-content: center; /* Optional: centers whole row */
   gap: 10px; /* space between icon & text */
   margin: 10px 0;
+}
+
+p {
+  color: rgb(32, 98, 204);
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(0, 0, 0);
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  text-align: center;
 }
