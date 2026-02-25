@@ -1,4 +1,6 @@
 
+let cloudOneX = 50;
+let cloudWidth = 80;
 
 function setup() {
     createCanvas(400, 400);
@@ -7,6 +9,7 @@ function setup() {
 function draw() {
     // gettingStarted1()
     // variablesAndChange()
+    mountainsAtNight()
 }
 
 function gettingStarted1(){
@@ -79,5 +82,6 @@ function mountainsAtNight(){
 
     // cloud
     fill(255);
-    ellipse(50,50,80,40)
+    let cloudOneX = ((frameCount) % (width+2*cloudWidth)) - cloudWidth;
+    ellipse(cloudOneX,50,cloudWidth,40)
 }
