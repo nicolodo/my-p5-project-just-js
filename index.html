@@ -1,14 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my-p5-project</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/p5.js"></script>
     <script src="js/addons/p5.sound.min.js"></script>
-</head>
-<body>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
     <script src="sketchMulti.js"></script>
-</body>
+    <header>
+      <h1>Welcome to p5.js</h1>
+      <p>
+        <strong>p5.js</strong> is a JavaScript library for creative coding. It
+        helps artists, designers, students, and developers create interactive
+        graphics, animations, and digital art directly in the browser.
+      </p>
+      <section class="buttons">
+        <button onclick="goToSketch('sketch1.html')">Gesture Drawing</button>
+        <button onclick="goToSketch('sketch2.html')">Bubble Sketch</button>
+        <button onclick="goToSketch('sketch3.html')">Sketch</button>
+      </section>
+    </header>
+
+    <section>
+      <h2>What You Can Create</h2>
+
+      <p>
+        <p>Interactive animations</p>
+      </p>
+      <p>Generative digital art</p>
+      <p>Browser-based games</p>
+      <p>Data visualizations</p>
+      <p>Audio and visual experiments</p>
+      <p>3D grap</p>hics using WebGL</p>
+    </section>
+
+    <section>
+      <h2>How It Works</h2>
+      <p>A basic p5.js sketch uses two main functions:</p>
+
+      <p><strong>setup()</strong> – Runs once when the program starts</p>
+      <p><strong>draw()</strong> – Runs continuously to create animation</p>
+
+      <pre><code>
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw() {
+    background(220);
+    circle(200, 200, 100);
+}
+        </code></pre>
+    </section>
+
+    <section>
+      <h2>Why Choose p5.js?</h2>
+     
+        <p>Beginner-friendly syntax</p>
+        <p>Designed for creativity</p>
+        <p>Large global community</p>
+        <p>Perfect for education</p>
+        <p>Easy to share projects online</p>
+     
+    </section>
+
+    <footer>
+      <p>Start creating with p5.js today and bring your ideas to life!</p>
+    </footer>
+  </body>
 </html>
