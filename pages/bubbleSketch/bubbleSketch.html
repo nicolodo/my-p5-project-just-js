@@ -12,9 +12,63 @@
   </head>
   <body>
     <header>
-      <h1>Bubble Sketch</h1>
+      <h1>Bouncing Ball Animation</h1>
       <a href="../../index.html"><button>Home</button></a>
       <!-- <button onclick="goHome()">Home</button> -->
     </header>
+
+    <section>
+      <h2>How This Code Works</h2>
+      <p>
+        This program creates a moving ball that bounces around the screen. The
+        ball changes direction when it hits the edges of the canvas.
+      </p>
+    </section>
+    <div>
+      <div class="container">
+        <ul>
+          <li><strong>x, y</strong> → Ball position</li>
+          <li><strong>speedX, speedY</strong> → Ball movement speed</li>
+          <li><strong>setup()</strong> → Creates the canvas</li>
+          <li><strong>draw()</strong> → Runs continuously to animate</li>
+          <li><strong>if statements</strong> → Make the ball bounce</li>
+        </ul>
+      </div>
+      <div>
+        <pre><code>
+        let x, y;
+        let speedX = 3;
+        let speedY = 2;
+        
+        function setup() {
+          createCanvas(640, 480);
+          x = width / 2;
+          y = height / 2;
+          background(255);
+        }
+        
+        function draw() {
+          background(255);
+        
+          fill(255, 100, 100);
+          noStroke();
+          ellipse(x, y, 50, 50);
+        
+          x += speedX;
+          y += speedY;
+        
+          <p>"If the ball's position is too far to the right OR too far to the left, reverse the horizontal speed. If it's too high OR too low, reverse the vertical speed."</p>
+          if (x > width - 25 || x < 25) speedX *= -1;
+          if (y > height - 25 || y < 25) speedY *= -1;
+        }
+        
+        function goHome() {
+          window.location.href = "index.html";
+        }
+        </code></pre>
+      </div>
+    </div>
+
+    <footer class="game-footer"><p>p5.js Bouncing Ball Project</p></footer>
   </body>
 </html>
